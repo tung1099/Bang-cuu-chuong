@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let bcc;
+    bcc = "<table border='1' width='600' cellspacing='0' cellpadding='10'>"
+    for (i = 2; i < 10; i++) {
+        bcc += "<tr>";
+        for (j = 2; j < 10; j++) {
+            let ketqua = i*j;
+           bcc += "<td>" + i + "x" + j + "=" + ketqua + "</td>";
+        }
+       bcc += "</tr>";
+    }
+   bcc += "</table>";
+    document.write(bcc);
+</script>
+</body>
+</html>
